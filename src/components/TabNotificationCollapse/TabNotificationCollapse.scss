@@ -1,0 +1,136 @@
+@import "../../constants/const.scss";
+
+.tabNotificationCollapse {
+  margin-top: 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 90px;
+    border: 1px solid $light-grey-v6;
+    background: $white;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 25px 20px;
+    z-index: 7;
+  }
+
+  &.openContent {
+    box-shadow: $headerShadow;
+    border-radius: 10px;
+
+    .tabNotificationCollapse__header{
+      border: none;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 2px solid $light-grey-v6;
+    }
+  }
+
+  &__id {
+    max-width: 82px;
+    width: 100%;
+    margin-right: 30px;
+
+    .ant-typography {
+      color: $green;
+      margin: 0;
+    }
+  }
+
+  &__message-title {
+    width: 100%;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+
+    .ant-typography {
+      margin: 0;
+    }
+  }
+
+  &__status {
+    max-width: 226px;
+    width: 100%;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+
+    .ant-typography {
+      margin: 0;
+    }
+
+    .statusRound {
+      margin-right: 12px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+
+      &-register {
+        background: $statusOrange;
+      }
+
+      &-in-work {
+        background: $statusGreen;
+      }
+
+      &-danger {
+        background: $red;
+      }
+    }
+  }
+
+  &__date {
+    max-width: 134px;
+    width: 100%;
+    margin-right: 26px;
+
+    .ant-typography {
+      margin: 0;
+
+      &:last-child {
+        color: $light-grey-v2;
+      }
+    }
+  }
+
+  &__info {
+    width: 112px;
+
+    button {
+      width: 112px;
+      height: 32px;
+
+      background: $green-v2;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      color: $white;
+
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+
+  &__content {
+    background: $white;
+    box-shadow: $headerShadow;
+    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__box {
+    padding: 32px 35px;
+
+    .notificationRow:first-child {
+      .notificationRow__text {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .notificationsList{
+    margin-top: 57px;
+  }
+}

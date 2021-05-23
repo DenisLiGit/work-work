@@ -1,0 +1,76 @@
+@import "../../constants/const";
+
+.customInputWrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 5px;
+
+  &__error {
+    position: absolute;
+    font-size: 13px;
+    line-height: 26px;
+    bottom: -24px;
+  }
+
+  &.width-50 {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  &.width-100 {
+    width: 100%;
+    margin: 10px;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 9px;
+
+    span {
+      color: $green;
+      margin-left: 5px;
+    }
+  }
+
+
+  .passwordEye {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+  }
+
+}
+
+.customInput {
+  border: 1px solid $light-grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: $white;
+  outline: none;
+  padding: 12px 16px;
+  color: $black;
+
+  &::placeholder {
+    color: $light-grey-v2;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $green-v2;
+  }
+
+  &[disabled] {
+    background: $light-grey-v3;
+    border-color: $light-grey-v3;
+
+    &::placeholder {
+      color: $light-grey-v4;
+    }
+  }
+
+  &.error {
+    border-color: $red;
+  }
+}

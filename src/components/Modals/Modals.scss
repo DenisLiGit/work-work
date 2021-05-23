@@ -1,0 +1,96 @@
+@import "../../constants/const";
+
+.modals {
+  .ant-modal-header,
+  .ant-modal-footer,
+  .ant-modal-content {
+    border: none;
+    border-radius: 18px;
+  }
+
+  .ant-modal-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 10px 0 10px;
+  }
+
+  .ant-modal-close {
+    margin: 10px;
+  }
+
+  &.registerModal {
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+  }
+
+  .ant-typography,
+  .ant-btn-group {
+    margin: 10px;
+    width: 100%;
+
+    a {
+      color: $green;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    button {
+      height: 56px;
+      width: 100%;
+      background: $green;
+      border-radius: 8px !important;
+      border-color: $green;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  .ant-modal-footer {
+    padding: 0;
+  }
+
+  .divider {
+    width: 100%;
+  }
+
+  &.loginModal {
+    .ant-form-horizontal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ant-checkbox-wrapper {
+      margin: 10px 10px 32px 10px;
+    }
+
+    .ant-modal-title {
+      margin: 10px 10px 0 0;
+    }
+
+    .checkboxWrapper {
+      width: 100%;
+    }
+
+    .ant-btn-group {
+      flex-direction: column;
+
+      & > button {
+        margin: 0 0 16px 0;
+        width: 100%;
+
+        &:last-child {
+          background: $white;
+          color: $green;
+          border-color: $green !important;
+        }
+      }
+    }
+  }
+}

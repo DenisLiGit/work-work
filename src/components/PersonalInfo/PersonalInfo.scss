@@ -1,0 +1,35 @@
+@import "../../constants/const.scss";
+
+.personalInfo {
+  &__title {
+    font-size: 32px!important;
+    margin-bottom: 45px!important;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__info {
+    margin-top: 34px;
+
+    label {
+      font-weight: 600;
+    }
+
+    div {
+      max-width: 736px;
+      height: 48px;
+      width: 100%;
+
+      background: $light-grey-v3;
+      border-radius: 4px;
+      color: $light-grey-v7;
+      display: flex;
+      align-items: center;
+      margin-top: 9px;
+      padding-left: 16px;
+    }
+  }
+}

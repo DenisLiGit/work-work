@@ -1,0 +1,17 @@
+@import "./constants/const.scss";
+
+.App {
+  overflow: hidden;
+
+  .ant-layout {
+    background: $white !important;
+
+    .site-layout-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+

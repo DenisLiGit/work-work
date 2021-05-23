@@ -1,0 +1,14 @@
+.yandexMapPage {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 64px);
+
+  > a {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    background: green;
+    color: #fff;
+  }
+}

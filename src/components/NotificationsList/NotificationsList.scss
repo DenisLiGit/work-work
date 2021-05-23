@@ -1,0 +1,31 @@
+@import "../../constants/const.scss";
+
+.notificationsList {
+  max-width: 1120px;
+  width: 100%;
+
+  background: $light-grey-v3;
+  border-radius: 18px;
+  padding: 23px 32px 32px;
+  margin-bottom: 64px;
+
+  &__list {
+    &-titles {
+      display: flex;
+      padding: 29px 32px 0;
+
+      span {
+        font-weight: 600;
+        width: 100%!important;
+
+        &:first-child {
+          max-width: 112px;
+        }
+
+        &:last-child {
+          max-width: 392px;
+        }
+      }
+    }
+  }
+}

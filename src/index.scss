@@ -1,0 +1,25 @@
+@import "./constants/const.scss";
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url(font/Inter-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  ;
+  color: $black;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: Inter;
+}

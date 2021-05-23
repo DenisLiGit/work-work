@@ -1,0 +1,77 @@
+@import "../../constants/const.scss";
+
+.mainBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 558px;
+  background: url("../../imgs/mainImg.png") top center no-repeat;
+  margin-bottom: 112px;
+
+  &__info {
+    width: 544px;
+    padding-top: 87px;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 36px;
+    margin-bottom: 107px;
+    height: 252px;
+  }
+
+  &__counters {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background: $white;
+    box-shadow: 0px 4px 32px rgb(0 0 0 / 30%);
+    border-radius: 18px;
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      > div {
+        width: 224px;
+        height: 155px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+
+        b {
+          margin-bottom: 15px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+
+        &:first-child {
+          background: $light-blue;
+        }
+
+        &:last-child {
+          background: $light-green;
+        }
+      }
+    }
+    button
+    {
+      height: 64px;
+      border-radius: 8px;
+      background: $green;
+      border: none;
+      outline: none;
+      color: $white;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../constants/const.scss";
+
+.objectPage {
+  width: 100%;
+
+  &__content,
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    height: 254px;
+    background: $light-grey-v3;
+
+    &-box {
+      max-width: 1120px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .ant-breadcrumb {
+      span {
+        color: $black;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__content {
+    &-box {
+      max-width: 1158px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .about__content-text {
+        .ant-typography {
+          max-width: 736px;
+        }
+      }
+    }
+
+    &-text {
+      margin-top: 57px;
+    }
+
+    &-poster {
+      width: 1120px;
+      height: 630px;
+      position: relative;
+      top: -40px;
+      filter: drop-shadow(0px 24px 40px rgba(26, 26, 26, 0.16));
+      border-radius: 18px;
+    }
+  }
+
+  &__return {
+    width: 736px;
+    height: 56px;
+
+    background: $green;
+    border-radius: 8px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: $green-v2;
+      color: $white;
+    }
+  }
+
+  &__map-wrapper {
+    width: 1120px;
+    height: 529px;
+    filter: drop-shadow($headerShadow);
+    position: relative;
+    top: -44px;
+    border-radius: 18px;
+
+    > div > ymaps > ymaps,
+    > div > ymaps > ymaps > ymaps,{
+      border-radius: 18px;
+    }
+  }
+}

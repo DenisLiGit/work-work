@@ -1,0 +1,25 @@
+@import "../../../constants/const.scss";
+
+.documentBox{
+  width: 100%;
+  background: $light-grey-v3;
+  border-radius: 10px;
+  height: 68px;
+  display: flex;
+  margin-bottom: 27px;
+  align-items: center;
+  padding: 15px 16px;
+
+  img{
+    width: 30px;
+    height: 38px;
+    margin-right: 16px;
+  }
+
+  &__description{
+    color: $light-grey-v2;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+  }
+}

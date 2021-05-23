@@ -1,0 +1,41 @@
+@import "../../constants/const.scss";
+
+.userPage {
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+
+    .ant-tabs {
+      max-width: 1120px;
+      width: 100%;
+      overflow: visible;
+
+      &-nav-wrap {
+        border-bottom: 1px solid $light-grey-v6;
+      }
+    }
+
+    .ant-tabs-tabpane {
+      padding-top: 58px;
+    }
+
+    .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab {
+      border: none;
+      background: $white;
+
+      &-active {
+        background: $green-v2;
+        border-radius: 8px 8px 0px 0px !important;
+
+        .ant-tabs-tab-btn {
+          color: $white !important;
+
+        }
+      }
+    }
+  }
+}

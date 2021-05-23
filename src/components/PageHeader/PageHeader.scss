@@ -1,0 +1,28 @@
+@import "../../constants/const.scss";
+
+.pageHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 224px;
+  background: $light-grey-v3;
+
+  &-box {
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .ant-breadcrumb {
+    span {
+      color: $black;
+      font-size: 12px;
+    }
+  }
+}

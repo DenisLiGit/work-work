@@ -1,0 +1,78 @@
+@import "../../constants/const.scss";
+
+.about {
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-box {
+      max-width: 1158px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-text {
+      margin-top: 57px;
+    }
+
+    &-poster {
+      width: 1120px;
+      height: 630px;
+      position: relative;
+      top: -40px;
+      filter: drop-shadow(0px 24px 40px rgba(26, 26, 26, 0.16));
+      border-radius: 18px;
+    }
+
+    .ant-typography {
+      max-width: 736px;
+    }
+
+    .aboutSlider {
+      width: 928px;
+      margin: 57px 0 0 0;
+
+      .sliderArrow {
+        width: 19px;
+        height: 30px;
+        background-image: url("data:image/svg+xml,%3Csvg width='19' height='30' viewBox='0 0 19 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 26.82L6.64687 15L19 3.18L15.6766 -2.90544e-07L1.31134e-06 15L15.6766 30L19 26.82Z' fill='%23C7C9CC'/%3E%3C/svg%3E%0A");
+
+        &:hover {
+          background-image: url("data:image/svg+xml,%3Csvg width='19' height='30' viewBox='0 0 19 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 26.82L6.64687 15L19 3.18L15.6766 -2.90544e-07L1.31134e-06 15L15.6766 30L19 26.82Z' fill='%2301AC6A'/%3E%3C/svg%3E%0A");
+        }
+      }
+
+      .slick-next {
+        right: -96px;
+        transform: rotate(-180deg);
+
+        &:before {
+          content: '';
+        }
+      }
+
+      .slick-prev {
+        left: -96px;
+
+        &:before {
+          content: '';
+        }
+      }
+
+      img {
+        width: 928px;
+        height: 522px;
+        border-radius: 18px;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,4 @@
+- скачать проект
+- npm i
+- npm run dev - старт сборки dev версии
+- npm run make-code-beautiful - автостилизация для кода

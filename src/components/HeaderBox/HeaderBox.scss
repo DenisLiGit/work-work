@@ -1,0 +1,136 @@
+@import "../../constants/const";
+
+.HeaderBox {
+  display: flex;
+  background: $headerColor;
+  padding: 0 32px;
+  height: 96px;
+
+  > div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      justify-content: flex-end;
+      border-bottom: none;
+    }
+  }
+
+  .ant-menu {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &-horizontal {
+      border-bottom: none;
+
+      > .ant-menu-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 2px !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+
+        &-selected,
+        &:hover {
+          border-bottom: 4px solid $green !important;
+
+          a {
+            color: $green;
+          }
+        }
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .problemReport {
+    height: 40px;
+    left: 1418px;
+    top: 28px;
+    font-weight: 600;
+    background: $white;
+    margin-right: 32px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid $green-v2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: $green-v2;
+    cursor: pointer;
+
+    &:hover {
+      background: $light-grey-v5;
+    }
+  }
+
+  .userInfo,
+  .login {
+    border: none;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .userInfo {
+    height: 100%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+
+    a {
+      color: $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__icon {
+      transition: all 1.3s;
+      background: url("../../imgs/userInfo.svg");
+      margin-right: 14px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+
+      border-bottom: 4px solid $green;
+      a {
+        color: $green;
+      }
+
+      .userInfo__icon {
+        background: url("../../imgs/userInfoGreen.svg");
+      }
+    }
+
+
+  }
+
+  .headerDivider {
+    width: 1px;
+    height: 40px;
+    margin: 0 32px;
+
+    background: $light-grey-v6;
+  }
+
+  &__page {
+    height: 64px;
+    box-shadow: $headerShadow;
+    z-index: 10;
+  }
+}

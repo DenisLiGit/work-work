@@ -1,0 +1,27 @@
+@import "../../constants/const.scss";
+
+.ant-layout-footer {
+  background: $footerColor !important;
+  margin-top: 112px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    max-width: 1120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ant-typography {
+      font-size: 12px;
+      color: $white;
+      margin: 0;
+    }
+  }
+
+  &__hide {
+    display: none !important;
+  }
+}

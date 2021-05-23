@@ -1,0 +1,117 @@
+@import "../../../constants/const.scss";
+
+.problemReportFiles {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+
+  .ant-upload {
+    &.ant-upload-select {
+      &.ant-upload-select-text {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+      }
+    }
+
+    &.ant-upload-btn {
+      display: flex;
+    }
+  }
+
+  .ant-upload-list.ant-upload-list-text {
+    margin-top: 66px;
+
+    .ant-upload-text-icon {
+      display: none;
+    }
+
+    .ant-upload-list-text-container {
+      height: 48px;
+
+      background: $white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin-top: 0;
+        width: 100%;
+
+        &:hover {
+          .ant-upload-list-item-info {
+            background: $white;
+          }
+        }
+
+        .ant-upload-span {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .ant-btn.ant-upload-list-item-card-actions-btn {
+          opacity: 1 !important;
+          background: url('../../../imgs/delFile.svg') center center no-repeat;
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    background: $light-grey-v3;
+    border-radius: 18px;
+    padding: 32px;
+    margin-top: 9px;
+    min-height: 100px;
+  }
+
+  .ant-btn {
+    color: $white;
+    width: 202px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+
+    background: $green-v2;
+    border-radius: 8px;
+    margin-right: 20px;
+
+    img {
+      margin-right: 14px;
+    }
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-left: 32px;
+    padding-top: 32px;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .ant-typography {
+    color: $light-grey-v7;
+  }
+
+}

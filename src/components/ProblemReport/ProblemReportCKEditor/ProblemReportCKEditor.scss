@@ -1,0 +1,19 @@
+.problemReportCKEditor {
+  margin-top: 59px;
+  max-width: 736px;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .ck.ck-editor {
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    .ck-content.ck-editor__editable {
+      min-height: 200px;
+    }
+  }
+}
